@@ -3,10 +3,10 @@ using UnityEngine.AI;
 
 public class EnemyController : MonoBehaviour
 {
-    public float lookRadius = 10f;
+    public float lookRadius = 10f; // Defines the area where the enemy can see the player
 
     public Transform target;
-    public NavMeshAgent agent;
+    public NavMeshAgent agent; // a NavMesh "Agent" is essentially an entity that will be using the NavMesh surface
 
     void Awake()
     {

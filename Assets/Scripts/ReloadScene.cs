@@ -5,6 +5,10 @@ public class ReloadScene : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
+        /*
+        If the tag of the object that collides with whatever object this script is on is "Player",
+        the scene is reset, letting the player start over
+        */
         if(other.CompareTag("Player"))
         {
             Debug.Log("Scene reloaded!");

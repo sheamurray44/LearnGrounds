@@ -12,6 +12,10 @@ public class InventoryUI : MonoBehaviour
 
     public void UpdateItemText(PlayerInventory playerInventory)
     {
+        /*
+        Here we access the NumberOfItems variable from the PlayerInventory script
+        and have it shown as a readable string in the UI
+        */
         itemText.text = playerInventory.NumberOfItems.ToString();
     }
 
