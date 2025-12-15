@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 4999638546481665981}
   - component: {fileID: 5004926353013276534}
   - component: {fileID: 7001889133236541622}
+  - component: {fileID: 3075012555965944645}
+  - component: {fileID: 163166588598836088}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -180,3 +182,41 @@ MonoBehaviour:
   lookRadius: 6
   target: {fileID: 0}
   agent: {fileID: 0}
+--- !u!114 &3075012555965944645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5988754983996001764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5f443c8740fbce47a8790ac5b5d7d2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyCombat
+  playerInRange: 0
+  attackDamage: 40
+  playerCombat: {fileID: 0}
+--- !u!136 &163166588598836088
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5988754983996001764}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2
+  m_Height: 3
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
