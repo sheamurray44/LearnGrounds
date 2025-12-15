@@ -1,4 +1,7 @@
 using UnityEngine;
+/*
+ Attach to player to handle its health and death
+ */
 
 public class PlayerCombat : MonoBehaviour
 {
@@ -7,14 +10,12 @@ public class PlayerCombat : MonoBehaviour
     public GameObject gameOverUI;
     public Camera cam;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         gameOverUI.SetActive(false);
         currentHealth = maxHealth;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (currentHealth <= 0f)
@@ -25,8 +26,8 @@ public class PlayerCombat : MonoBehaviour
 
     private void PlayerDie()
     {
-        gameObject.SetActive(false);
+        cam.transform.parent = null; // Remove camera from player just to prevent errors
+        gameObject.SetActive(false); // Disabling the object instead of destroying will prevent errors
         gameOverUI.SetActive(true);
-        cam.transform.parent = null;
     }
 }

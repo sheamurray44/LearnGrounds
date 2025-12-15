@@ -6,7 +6,7 @@ public class EnemyController : MonoBehaviour
     public float lookRadius = 10f; // Defines the area where the enemy can see the player
 
     public Transform target;
-    public NavMeshAgent agent; // a NavMesh "Agent" is essentially an entity that will be using the NavMesh surface
+    public NavMeshAgent agent; // a NavMesh "Agent" is essentially an entity that will be using the NavMesh surface to move around
 
     void Awake()
     {

@@ -1,10 +1,12 @@
 using UnityEngine;
-
+/*
+Attach to each enemy and it will do damage to the player on collision
+*/
 public class EnemyCombat : MonoBehaviour
 {
     public bool playerInRange;
     public float attackDamage = 40f;
-    [SerializeField] private PlayerCombat playerCombat;
+    [SerializeField] private PlayerCombat playerCombat; // Reference the script on the player to access our players health
 
     private void Awake()
     {
@@ -28,7 +30,7 @@ public class EnemyCombat : MonoBehaviour
     {
         if (playerInRange)
         {
-           playerCombat.currentHealth -= damage;
+           playerCombat.currentHealth -= damage; // Deduct damage value from the players health when the trigger is entered
            Debug.Log("Player damaged");
         }
     }
