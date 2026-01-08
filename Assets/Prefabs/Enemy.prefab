@@ -197,6 +197,7 @@ MonoBehaviour:
   playerInRange: 0
   attackDamage: 40
   playerCombat: {fileID: 0}
+  healthbar: {fileID: 0}
 --- !u!136 &163166588598836088
 CapsuleCollider:
   m_ObjectHideFlags: 0
