@@ -574,11 +574,11 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1283671191}
   - {fileID: 909533864}
   - {fileID: 1470093131}
   - {fileID: 680061533}
   - {fileID: 1153671607}
-  - {fileID: 1283671191}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1862,18 +1862,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0.17828703, a: 1}
+  m_Color: {r: 0, g: 1, b: 0.17647052, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: b78a37beaafc01f4bb19b9f8efe2b822, type: 3}
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
@@ -3630,7 +3630,7 @@ PrefabInstance:
       objectReference: {fileID: 1153671606}
     - target: {fileID: 4156380314326201680, guid: 3259a4501d9697744899621276e8b41e, type: 3}
       propertyPath: maxHealth
-      value: 1000
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 4156380314326201680, guid: 3259a4501d9697744899621276e8b41e, type: 3}
       propertyPath: gameOverUI

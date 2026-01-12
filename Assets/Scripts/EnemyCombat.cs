@@ -7,12 +7,11 @@ public class EnemyCombat : MonoBehaviour
     public bool playerInRange;
     public float attackDamage = 40f;
     [SerializeField] private PlayerCombat playerCombat; // Reference the script on the player to access our players health
-    public Healthbar healthbar;
+    [SerializeField] private Healthbar healthbar;
 
     private void Awake()
     {
         playerInRange = false;
-        healthbar.UpdateHealthBar(playerCombat.maxHealth, playerCombat.currentHealth);
     }
 
     private void OnTriggerEnter(Collider other)
